@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digicard</title>
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/digivice.png">
+
+</head>
+
+<body>
+    <img class="logo" src="./images/digimon logo.png">
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h3 class="card-title">DIGICARD</h3>
+                <p class="card-text">Mais Informações</p>
+            </div>
+            <img class="card-img" src="./images/agumon.png" id="img-digi">
+        </div>
+    </div>
+
+    <div id="container-input">
+        <input type="text" name="" id="input" placeholder="Digimon preferido">
+        <input title="Search" value="" type="submit" class="button">
+    </div>
+
+    <script src="https://kit.fontawesome.com/a4d1af09f1.js" crossorigin="anonymous"></script>
+    
+    <script src="./api.js"></script>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5,    
+        });
+    </script>
+
+
+</body>
+
+</html>
